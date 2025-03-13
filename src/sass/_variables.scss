@@ -1,0 +1,46 @@
+// Theme colors
+$color-black: #01070A;
+$color-1: #46656F;
+$color-2: #8FABB7;
+// $color-3: #D8DFE5; anterior
+$color-3: #b5bec5;
+$color-white: #FBFBFB;
+
+// Screen breakpoints
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+
+// Containers
+$container-md: 720px;
+$container-lg: 1220px;
+
+// Icons
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "/fonts" !default;
+
+$i-github: "\e910";
+$i-linkedin: "\e911";
+$i-react: "\e90e";
+$i-grunt: "\e900";
+$i-Knockout: "\e901";
+$i-less: "\e902";
+$i-git: "\e903";
+$i-docker: "\e904";
+$i-gulp: "\e905";
+$i-magento: "\e906";
+$i-php: "\e907";
+$i-jquery: "\e908";
+$i-typescript: "\e909";
+$i-css3: "\e90a";
+$i-javascript: "\e90b";
+$i-sass: "\e90c";
+$i-html5: "\e90d";
+$i-link: "\e90f";
+
+// Fonts
+$font-sm: .875rem;
+$icon-text-shadow: #ffffff 0px 0 15px;
+
+
+$default-transition: all .250s ease;

@@ -1,0 +1,133 @@
+@use "variables" as *;
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2?sz2v7p') format('woff2'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?sz2v7p') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-github {
+  &:before {
+    content: $i-github; 
+  }
+}
+.i-linkedin {
+  &:before {
+    content: $i-linkedin;     
+    color: #0077b5;
+  }
+}
+.i-react {
+  &:before {
+    content: $i-react;     
+    color: #61dafb;
+  }
+}
+.i-grunt {
+  &:before {
+    content: $i-grunt;     
+    color: #faa918;
+  }
+}
+.i-knockout {
+  &:before {
+    content: $i-Knockout;     
+    color: #e42e16;
+  }
+}
+.i-less {
+  &:before {
+    content: $i-less;     
+    color: #1d365d;
+  }
+}
+.i-git {
+  &:before {
+    content: $i-git;     
+    color: #f05032;
+  }
+}
+.i-docker {
+  &:before {
+    content: $i-docker;     
+    color: #1488c6;
+  }
+}
+.i-gulp {
+  &:before {
+    content: $i-gulp;     
+    color: #da4648;
+  }
+}
+.i-magento {
+  &:before {
+    content: $i-magento;     
+    color: #ee672f;
+  }
+}
+.i-php {
+  &:before {
+    content: $i-php;     
+    color: #777bb4;
+  }
+}
+.i-jquery {
+  &:before {
+    content: $i-jquery;     
+    color: #0769ad;
+  }
+}
+.i-typescript {
+  &:before {
+    content: $i-typescript;     
+    color: #007acc;
+  }
+}
+.i-css3 {
+  &:before {
+    content: $i-css3;     
+    color: #1572b6;
+  }
+}
+.i-javascript {
+  &:before {
+    content: $i-javascript;     
+    color: #f7df1e;
+  }
+}
+.i-sass {
+  &:before {
+    content: $i-sass;     
+    color: #c69;
+  }
+}
+.i-html5 {
+  &:before {
+    content: $i-html5;     
+    color: #e34f26;
+  }
+}
+.i-link {
+  &:before {
+    content: $i-link; 
+  }
+}
