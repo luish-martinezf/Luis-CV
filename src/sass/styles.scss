@@ -404,7 +404,7 @@ main {
     }
 }
 
-@media (max-width: (var.$screen-lg - 1)) {
+@media (max-height: 640px) {
     $padding-top-section: 1.5rem;
 
     header {
