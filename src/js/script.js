@@ -24,7 +24,7 @@
                 const fullyVisibleSection = [...visibleMap.entries()].find(([_, data]) => data.isFullyVisible);
 
                 // Assign first visible section, and if not, select the section with most visible area
-                const mostVisible = fullyVisibleSection || visibleMap.entries().reduce((max, entry) => 
+                const mostVisible = fullyVisibleSection || [...visibleMap.entries()].reduce((max, entry) => 
                     max[1].visibleArea > entry[1].visibleArea ? max : entry
                 , [null, { visibleArea: 0 }]);
 
