@@ -1,4 +1,3 @@
-<h1>luismartinezf.com</h1>
 
 This is my resume presentation <a href="https://luismartinezf.com/" target="_blank">luismartinezf.com</a>, hosted in Vercel.
 
@@ -14,3 +13,6 @@ To build and minify use:
 
 Inspired by https://brittanychiang.com/ design, but mine was developed with a pure vanilla JS focus.
 Background animation taken from https://www.finisher.co/lab/header/
+
+
+https://roadmap.sh/projects/portfolio-website
