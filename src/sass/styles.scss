@@ -4,17 +4,21 @@
 @use 'utilities';
 @use 'typo';
 @use 'icons';
+@use 'focus';
 
 html {
     scroll-behavior: smooth;
     overscroll-behavior: none;
 }
 
-.container {
-    padding: 0 1rem;
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
-header {
+.container {
+    padding: 0 1rem;
 }
 
 main {
@@ -111,9 +115,6 @@ main {
 .job {
     &__period {
         white-space: nowrap;
-    }
-
-    &__title {
     }
 
     &__content {
@@ -318,7 +319,8 @@ main {
             }
 
             &.active,
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 color: var.$color-white;
 
                 &:before {
@@ -360,7 +362,7 @@ main {
         scroll-margin-top: $padding-top-section;
 
         h2 {
-            display: none;
+            @include utilities.sr-only;
         }
     }
 
@@ -388,6 +390,12 @@ main {
 
             &:before {
                 opacity: 1;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            &:hover {
+                transform: none;
             }
         }
 

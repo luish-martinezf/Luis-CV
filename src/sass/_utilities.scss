@@ -1,4 +1,6 @@
-.sr-only {
+@use 'variables' as var;
+
+@mixin sr-only {
     position: absolute;
     width: 1px !important;
     height: 1px !important;
@@ -8,4 +10,25 @@
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+}
+
+.sr-only {
+    @include sr-only;
+}
+
+a.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    padding: .5rem 1rem;
+    background: var.$color-white;
+    font-weight: 600;
+    z-index: 100;
+    border-radius: 4px;
+    transition: top .2s ease;
+
+    &:focus {
+        top: 1rem;
+        color: var.$color-black;
+    }
 }
